@@ -1,27 +1,59 @@
-<DOCTYPE html>
-    <html lang="ja">
-    
-        <head>
-            <meta charset="utf-8">
-            <title>INU-NO-KIMOTI</title>
-            <link rel="stylesheet" href="other.css">
-        </head>
+.box{
+    position: relative;
+}
 
-        <body>
-            <div class="box">
-                <div class="img-wrap">
-                    <img src="a.jpg">
-                </div>
-    
-                <div class="box2">
-                    <div class="btn_area">
-                        <a href="index.html" class="btn-border">×</a>
-                    </div>
-                    <p>現在、記事を作成中です。<br>今日は表示することができません。</p>
-                </div>
-            </div>
+img {
+    display: block;
+    width: 100%;
+}
+  
+.img-wrap {
+    background-color: #000000;
+}
+  
+.img-wrap img {
+    opacity: 0.4;
+}
 
-        </body>
+.box2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    background-color: #000000;
+    border-radius: 20px;
+    box-shadow: 5px 5px 30px rgba(255, 255, 255);
+}
 
-    </html>
-</DOCTYPE>
+.btn_area{
+    text-align: right;
+    padding-top: 8px;
+    padding-right: 5px;
+}
+
+a.btn-border {
+    text-decoration: none;
+    color: white;
+    border-radius: 50%;
+    background: black;
+    padding: 0.5% 2.4%;
+    font-size: 2.4vw;
+}
+  
+a.btn-border:hover {
+    color: black;
+    background: white;
+    border: 2px solid black;
+}
+
+
+.box2 p{
+    margin-left: 50px;
+    margin-right: 15px;
+    margin-top: 0px;
+    color:white;
+    font-size: clamp(20px, 2.4vw, 200px);
+    font-weight: bold;
+}
